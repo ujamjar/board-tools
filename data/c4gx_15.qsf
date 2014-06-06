@@ -1,0 +1,153 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 348 03/10/2010 Service Pack 2 SJ Full Version
+# Date created = 18:35:24  March 23, 2010
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		golden_top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX15BF14C6
+set_global_assignment -name TOP_LEVEL_ENTITY golden_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:35:24  MARCH 23, 2010"
+set_global_assignment -name LAST_QUARTUS_VERSION 12.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name SEARCH_PATH "c:\\cvs_sandbox\\pld\\bts\\lib\\hw\\ip/"
+set_global_assignment -name SEARCH_PATH "c:\\cvs_sandbox\\pld\\bts\\bts_com\\lib\\hw\\ip/"
+set_global_assignment -name SEARCH_PATH "c:\\cvs_sandbox\\pld\\bts\\bts_com\\lib\\hw\\ports/"
+set_global_assignment -name SEARCH_PATH "c:\\cvs_sandbox\\pld\\bts\\bts_com\\lib\\hw\\megawizards/"
+set_global_assignment -name SEARCH_PATH ./
+set_global_assignment -name SEARCH_PATH pld/bts/bts_com/lib/hw/ip/ -tag from_archive
+set_global_assignment -name SEARCH_PATH pld/bts/bts_com/lib/hw/ports/ -tag from_archive
+set_global_assignment -name SEARCH_PATH pld/bts/lib/hw/ip/
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 169
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_D13 -to fsm_a[23]
+set_location_assignment PIN_K12 -to fsm_a[22]
+set_location_assignment PIN_K11 -to fsm_a[21]
+set_location_assignment PIN_L13 -to fsm_a[20]
+set_location_assignment PIN_L12 -to fsm_a[19]
+set_location_assignment PIN_K13 -to fsm_a[18]
+set_location_assignment PIN_J13 -to fsm_a[17]
+set_location_assignment PIN_M13 -to fsm_a[16]
+set_location_assignment PIN_N13 -to fsm_a[15]
+set_location_assignment PIN_H12 -to fsm_a[14]
+set_location_assignment PIN_H10 -to fsm_a[13]
+set_location_assignment PIN_N11 -to fsm_a[12]
+set_location_assignment PIN_N10 -to fsm_a[11]
+set_location_assignment PIN_M9 -to fsm_a[10]
+set_location_assignment PIN_L11 -to fsm_a[9]
+set_location_assignment PIN_K10 -to fsm_a[8]
+set_location_assignment PIN_N12 -to fsm_a[7]
+set_location_assignment PIN_M11 -to fsm_a[6]
+set_location_assignment PIN_A7 -to fsm_a[5]
+set_location_assignment PIN_A8 -to fsm_a[4]
+set_location_assignment PIN_C6 -to fsm_a[3]
+set_location_assignment PIN_B6 -to fsm_a[2]
+set_location_assignment PIN_A6 -to fsm_a[1]
+set_location_assignment PIN_N4 -to fsm_a[0]
+set_location_assignment PIN_C8 -to fsm_d[15]
+set_location_assignment PIN_C12 -to fsm_d[14]
+set_location_assignment PIN_C11 -to fsm_d[13]
+set_location_assignment PIN_B10 -to fsm_d[12]
+set_location_assignment PIN_B11 -to fsm_d[11]
+set_location_assignment PIN_A11 -to fsm_d[10]
+set_location_assignment PIN_A12 -to fsm_d[9]
+set_location_assignment PIN_G10 -to fsm_d[8]
+set_location_assignment PIN_G9 -to fsm_d[7]
+set_location_assignment PIN_F11 -to fsm_d[6]
+set_location_assignment PIN_F10 -to fsm_d[5]
+set_location_assignment PIN_E13 -to fsm_d[4]
+set_location_assignment PIN_F9 -to fsm_d[3]
+set_location_assignment PIN_E10 -to fsm_d[2]
+set_location_assignment PIN_D12 -to fsm_d[1]
+set_location_assignment PIN_D11 -to fsm_d[0]
+set_location_assignment PIN_B13 -to fsm_oen
+set_location_assignment PIN_A13 -to fsm_wen
+set_location_assignment PIN_L9 -to lcd_csn
+set_location_assignment PIN_M4 -to sram_bwan
+set_location_assignment PIN_L4 -to sram_bwbn
+set_location_assignment PIN_N6 -to sram_cen
+set_location_assignment PIN_L7 -to sram_clk
+set_location_assignment PIN_M6 -to user_led[3]
+set_location_assignment PIN_N5 -to user_led[2]
+set_location_assignment PIN_C13 -to user_led[1]
+set_location_assignment PIN_N8 -to user_led[0]
+set_location_assignment PIN_G13 -to user_pb[1]
+set_location_assignment PIN_H13 -to user_pb[0]
+set_location_assignment PIN_A10 -to pcie_perstn
+set_location_assignment PIN_B8 -to flash_cen
+set_location_assignment PIN_E2 -to enetr_rx_p
+set_location_assignment PIN_C2 -to enetr_tx_p
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to enetr_rx_p
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to enetr_tx_p
+set_location_assignment PIN_F12 -to enet_intn
+set_location_assignment PIN_N9 -to enet_mdc
+set_location_assignment PIN_K8 -to enet_mdio
+set_location_assignment PIN_K9 -to enet_resetn
+set_location_assignment PIN_A9 -to clk_b7_se
+set_location_assignment PIN_D10 -to cpu_resetn
+set_location_assignment PIN_M7 -to diff_125_p
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_location_assignment PIN_E7 -to refclk_125_p
+set_location_assignment PIN_J2 -to pcie_rx_p
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to pcie_rx_p
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to pcie_tx_p
+set_location_assignment PIN_G2 -to pcie_tx_p
+set_location_assignment PIN_G1 -to "pcie_tx_p(n)"
+set_location_assignment PIN_J6 -to pcie_refclk_p
+set_location_assignment PIN_A4 -to dclk
+set_location_assignment PIN_A5 -to config_data0
+set_location_assignment PIN_C5 -to epcs_cen
+set_location_assignment PIN_B5 -to epcs_sdo
+set_location_assignment PIN_L5 -to max2_csn
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_instance_assignment -name IO_STANDARD LVDS -to refclk_125_p
+set_instance_assignment -name IO_STANDARD HCSL -to pcie_refclk_p
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name VERILOG_FILE golden_top.v
+set_global_assignment -name MISC_FILE golden_top.dpf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

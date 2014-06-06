@@ -1,0 +1,5 @@
+version = "0.1.0"
+description = "HardCaml Board Tools"
+requires = "hardcaml,mikmatch_pcre,lwt.unix,deriving-ocsigen"
+archive(byte) = "Board_tools.cma"
+archive(native) = "Board_tools.cmxa"

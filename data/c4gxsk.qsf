@@ -1,0 +1,389 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+# Date created = 18:04:42  July 11, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		c4gxsk_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX15BF14C6
+set_global_assignment -name TOP_LEVEL_ENTITY c4gxsk
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:04:42  JULY 11, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED WITH WEAK PULL-UP"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name STRATIX_JTAG_USER_CODE DEADBEEF
+set_location_assignment PIN_L11 -to fsml_addr[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[9]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[9]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[9]
+set_location_assignment PIN_B6 -to fsml_addr[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[2]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[2]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[2]
+set_location_assignment PIN_A12 -to fsml_dq[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[9]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[9]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[9]
+set_location_assignment PIN_L7 -to ssram_clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ssram_clk
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to ssram_clk
+set_instance_assignment -name SLEW_RATE 2 -to ssram_clk
+set_location_assignment PIN_M7 -to clkin_125MHz
+set_instance_assignment -name IO_STANDARD LVDS -to clkin_125MHz
+set_location_assignment PIN_K11 -to fsml_addr[21]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[21]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[21]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[21]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[21]
+set_location_assignment PIN_B11 -to fsml_dq[11]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[11]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[11]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[11]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[11]
+set_location_assignment PIN_M6 -to led[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to led[3]
+set_instance_assignment -name SLEW_RATE 2 -to led[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to led[3]
+set_location_assignment PIN_H10 -to fsml_addr[13]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[13]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[13]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[13]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[13]
+set_location_assignment PIN_E10 -to fsml_dq[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[2]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[2]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[2]
+set_location_assignment PIN_A5 -to epcs_miso
+set_instance_assignment -name IO_STANDARD "2.5 V" -to epcs_miso
+set_location_assignment PIN_E7 -to refclk_enet
+set_instance_assignment -name IO_STANDARD LVDS -to refclk_enet
+set_location_assignment PIN_B8 -to flash_ceN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to flash_ceN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to flash_ceN
+set_instance_assignment -name SLEW_RATE 2 -to flash_ceN
+set_location_assignment PIN_G2 -to pcie_tx
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to pcie_tx
+set_location_assignment PIN_C5 -to epcs_csN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to epcs_csN
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to epcs_csN
+set_instance_assignment -name SLEW_RATE 2 -to epcs_csN
+set_location_assignment PIN_J7 -to "refclk_pcie(n)"
+set_location_assignment PIN_C6 -to fsml_addr[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[3]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[3]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[3]
+set_location_assignment PIN_K12 -to fsml_addr[22]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[22]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[22]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[22]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[22]
+set_location_assignment PIN_B10 -to fsml_dq[12]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[12]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[12]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[12]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[12]
+set_location_assignment PIN_H12 -to fsml_addr[14]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[14]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[14]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[14]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[14]
+set_location_assignment PIN_F9 -to fsml_dq[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[3]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[3]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[3]
+set_location_assignment PIN_A9 -to clkin_50MHz
+set_instance_assignment -name IO_STANDARD "2.5 V" -to clkin_50MHz
+set_location_assignment PIN_E2 -to enet_rx
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to enet_rx
+set_location_assignment PIN_N9 -to enet_mdc
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_mdc
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to enet_mdc
+set_instance_assignment -name SLEW_RATE 2 -to enet_mdc
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to enet_mdc
+set_location_assignment PIN_A8 -to fsml_addr[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[4]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[4]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[4]
+set_location_assignment PIN_J1 -to "pcie_rx(n)"
+set_location_assignment PIN_D13 -to fsml_addr[23]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[23]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[23]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[23]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[23]
+set_location_assignment PIN_C11 -to fsml_dq[13]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[13]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[13]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[13]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[13]
+set_location_assignment PIN_H13 -to pb[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pb[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to pb[0]
+set_location_assignment PIN_N13 -to fsml_addr[15]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[15]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[15]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[15]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[15]
+set_location_assignment PIN_E13 -to fsml_dq[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[4]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[4]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[4]
+set_location_assignment PIN_G1 -to "pcie_tx(n)"
+set_location_assignment PIN_B13 -to fsml_oeN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_oeN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_oeN
+set_instance_assignment -name SLEW_RATE 2 -to fsml_oeN
+set_location_assignment PIN_A10 -to pcie_perstN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_perstN
+set_location_assignment PIN_N7 -to "clkin_125MHz(n)"
+set_location_assignment PIN_D10 -to cpu_rstN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to cpu_rstN
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to cpu_rstN
+set_location_assignment PIN_L9 -to lcd_csN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd_csN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to lcd_csN
+set_instance_assignment -name SLEW_RATE 2 -to lcd_csN
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to lcd_csN
+set_location_assignment PIN_A7 -to fsml_addr[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[5]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[5]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[5]
+set_location_assignment PIN_L4 -to ssram_beN[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ssram_beN[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to ssram_beN[0]
+set_instance_assignment -name SLEW_RATE 2 -to ssram_beN[0]
+set_location_assignment PIN_C12 -to fsml_dq[14]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[14]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[14]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[14]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[14]
+set_location_assignment PIN_F10 -to fsml_dq[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[5]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[5]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[5]
+set_location_assignment PIN_G13 -to pb[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pb[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to pb[1]
+set_location_assignment PIN_A13 -to fsml_weN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_weN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_weN
+set_instance_assignment -name SLEW_RATE 2 -to fsml_weN
+set_location_assignment PIN_M13 -to fsml_addr[16]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[16]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[16]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[16]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[16]
+set_location_assignment PIN_C2 -to enet_tx
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to enet_tx
+set_location_assignment PIN_E6 -to "refclk_enet(n)"
+set_location_assignment PIN_B5 -to epcs_mosi
+set_instance_assignment -name IO_STANDARD "2.5 V" -to epcs_mosi
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to epcs_mosi
+set_instance_assignment -name SLEW_RATE 2 -to epcs_mosi
+set_location_assignment PIN_M11 -to fsml_addr[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[6]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[6]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[6]
+set_location_assignment PIN_N6 -to ssram_ceN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ssram_ceN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to ssram_ceN
+set_instance_assignment -name SLEW_RATE 2 -to ssram_ceN
+set_location_assignment PIN_M4 -to ssram_beN[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ssram_beN[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to ssram_beN[1]
+set_instance_assignment -name SLEW_RATE 2 -to ssram_beN[1]
+set_location_assignment PIN_A4 -to epcs_clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to epcs_clk
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to epcs_clk
+set_instance_assignment -name SLEW_RATE 2 -to epcs_clk
+set_location_assignment PIN_C8 -to fsml_dq[15]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[15]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[15]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[15]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[15]
+set_location_assignment PIN_F11 -to fsml_dq[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[6]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[6]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[6]
+set_location_assignment PIN_J13 -to fsml_addr[17]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[17]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[17]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[17]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[17]
+set_location_assignment PIN_N8 -to led[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to led[0]
+set_instance_assignment -name SLEW_RATE 2 -to led[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to led[0]
+set_location_assignment PIN_M9 -to fsml_addr[10]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[10]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[10]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[10]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[10]
+set_location_assignment PIN_K9 -to enet_rstN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_rstN
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to enet_rstN
+set_location_assignment PIN_L5 -to max2_csN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max2_csN
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to max2_csN
+set_instance_assignment -name SLEW_RATE 2 -to max2_csN
+set_location_assignment PIN_N12 -to fsml_addr[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[7]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[7]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[7]
+set_location_assignment PIN_K8 -to enet_mdio
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_mdio
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to enet_mdio
+set_instance_assignment -name SLEW_RATE 2 -to enet_mdio
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to enet_mdio
+set_location_assignment PIN_N4 -to fsml_addr[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[0]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[0]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[0]
+set_location_assignment PIN_G9 -to fsml_dq[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[7]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[7]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[7]
+set_location_assignment PIN_K13 -to fsml_addr[18]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[18]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[18]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[18]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[18]
+set_location_assignment PIN_C13 -to led[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to led[1]
+set_instance_assignment -name SLEW_RATE 2 -to led[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to led[1]
+set_location_assignment PIN_N10 -to fsml_addr[11]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[11]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[11]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[11]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[11]
+set_location_assignment PIN_D11 -to fsml_dq[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[0]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[0]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[0]
+set_location_assignment PIN_J6 -to refclk_pcie
+set_instance_assignment -name IO_STANDARD HCSL -to refclk_pcie
+set_location_assignment PIN_J2 -to pcie_rx
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to pcie_rx
+set_location_assignment PIN_E1 -to "enet_rx(n)"
+set_location_assignment PIN_F12 -to enet_intN
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_intN
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to enet_intN
+set_location_assignment PIN_K10 -to fsml_addr[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[8]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[8]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[8]
+set_location_assignment PIN_A6 -to fsml_addr[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[1]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[1]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[1]
+set_location_assignment PIN_C1 -to "enet_tx(n)"
+set_location_assignment PIN_G10 -to fsml_dq[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[8]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[8]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[8]
+set_location_assignment PIN_L12 -to fsml_addr[19]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[19]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[19]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[19]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[19]
+set_location_assignment PIN_L13 -to fsml_addr[20]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[20]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[20]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[20]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[20]
+set_location_assignment PIN_A11 -to fsml_dq[10]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[10]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[10]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[10]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[10]
+set_location_assignment PIN_N5 -to led[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to led[2]
+set_instance_assignment -name SLEW_RATE 2 -to led[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to led[2]
+set_location_assignment PIN_N11 -to fsml_addr[12]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_addr[12]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_addr[12]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_addr[12]
+set_instance_assignment -name PCI_IO ON -to fsml_addr[12]
+set_location_assignment PIN_D12 -to fsml_dq[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fsml_dq[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to fsml_dq[1]
+set_instance_assignment -name SLEW_RATE 2 -to fsml_dq[1]
+set_instance_assignment -name PCI_IO ON -to fsml_dq[1]
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name SDC_FILE /home/andyman/dev/altera/pcie/dave/hdl/c4gxsk/qsys_x1_62.5MHz/scripts/c4gxsk.sdc
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name QIP_FILE /home/andyman/dev/altera/pcie/dave/build/13.0/c4gxsk/qsys_x1_62.5MHz/speed/qsys_system/synthesis/qsys_system.qip
+set_global_assignment -name VERILOG_FILE /home/andyman/dev/altera/pcie/dave/hdl/c4gxsk/qsys_x1_62.5MHz/src/qsys_pll.v
+set_global_assignment -name VERILOG_FILE /home/andyman/dev/altera/pcie/dave/hdl/c4gxsk/qsys_x1_62.5MHz/src/qsys_pcie_reconfig.v
+set_global_assignment -name SYSTEMVERILOG_FILE /home/andyman/dev/altera/pcie/dave/hdl/share/src/sync.sv
+set_global_assignment -name SYSTEMVERILOG_FILE /home/andyman/dev/altera/pcie/dave/hdl/share/src/glitch_filter_fsm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE /home/andyman/dev/altera/pcie/dave/hdl/share/src/glitch_filter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE /home/andyman/dev/altera/pcie/dave/hdl/c4gxsk/qsys_x1_62.5MHz/src/qsys_top.sv
+set_global_assignment -name VHDL_FILE /home/andyman/dev/altera/pcie/dave/hdl/c4gxsk/qsys_x1_62.5MHz/src/c4gxsk.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

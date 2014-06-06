@@ -1,0 +1,50 @@
+Generating the BSP
+==================
+
+From the project dir 
+
+$ nios2-bsp hal bsp nios_16k.sopcinfo [--set hal.option false]
+
+The script board/data/nios2_16k_bsp.sh will generate a bsp with settings so that
+it can be used with embedded RAM.
+
+Generating an application
+=========================
+
+Create a new directory and add the source files to it.  From that directory run
+
+$ nios2-app-generate-makefile --bsp-dir ../bsp --elf-name start.elf --src-dir .
+
+The script board/data/nios2_default_app.sh will generate a simple hello world
+application as a starting point.
+
+Programming the .sof
+====================
+
+Configure the FPGA with a programming file.
+
+$ quartus_pgm -c usb-blaster -m jtag -o "p;de0_nano_time_limited.sof"
+$ nios2-configure-sof de0_nano_time_limited.sof
+
+Running the .elf
+================
+
+Run an .elf executable
+
+$ nios2-download -g program.elf
+
+All together now...
+===================
+
+From project directory:
+
+$ $(UJAMJAR_DATA)/nios2_16k_bsp.sh
+$ $(UJAMJAR_DATA)/nios2_default_app.sh
+$ cd app
+$ make
+$ nios2-configure-sof ../fpga.sof
+$ nios2-terminal
+$ nios2-download -g start.elf
+
+(last 3 commands should be run in seperate terminals)
+

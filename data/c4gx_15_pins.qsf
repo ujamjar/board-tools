@@ -1,0 +1,93 @@
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+
+
+#-----------fsm-----------
+set_location_assignment -value Pin_N8 -to fsm_a\[1\];
+set_location_assignment -value Pin_N9 -to fsm_a\[2\];
+set_location_assignment -value Pin_K8 -to fsm_a\[3\];
+set_location_assignment -value Pin_K9 -to fsm_a\[4\];
+set_location_assignment -value Pin_M11 -to fsm_a\[5\];
+set_location_assignment -value Pin_N12 -to fsm_a\[6\];
+set_location_assignment -value Pin_K10 -to fsm_a\[7\];
+set_location_assignment -value Pin_L11 -to fsm_a\[8\];
+set_location_assignment -value Pin_L9 -to fsm_a\[9\];
+set_location_assignment -value Pin_M9 -to fsm_a\[10\];
+set_location_assignment -value Pin_N10 -to fsm_a\[11\];
+set_location_assignment -value Pin_N11 -to fsm_a\[12\];
+set_location_assignment -value Pin_H10 -to fsm_a\[13\];
+set_location_assignment -value Pin_H12 -to fsm_a\[14\];
+set_location_assignment -value Pin_N13 -to fsm_a\[15\];
+set_location_assignment -value Pin_M13 -to fsm_a\[16\];
+set_location_assignment -value Pin_J13 -to fsm_a\[17\];
+set_location_assignment -value Pin_K13 -to fsm_a\[18\];
+set_location_assignment -value Pin_L12 -to fsm_a\[19\];
+set_location_assignment -value Pin_L13 -to fsm_a\[20\];
+set_location_assignment -value Pin_K11 -to fsm_a\[21\];
+set_location_assignment -value Pin_K12 -to fsm_a\[22\];
+set_location_assignment -value Pin_D11 -to fsm_d\[0\];
+set_location_assignment -value Pin_D12 -to fsm_d\[1\];
+set_location_assignment -value Pin_E10 -to fsm_d\[2\];
+set_location_assignment -value Pin_F9 -to fsm_d\[3\];
+set_location_assignment -value Pin_E13 -to fsm_d\[4\];
+set_location_assignment -value Pin_F10 -to fsm_d\[5\];
+set_location_assignment -value Pin_F11 -to fsm_d\[6\];
+set_location_assignment -value Pin_G9 -to fsm_d\[7\];
+set_location_assignment -value Pin_G10 -to fsm_d\[8\];
+set_location_assignment -value Pin_A12 -to fsm_d\[9\];
+set_location_assignment -value Pin_A11 -to fsm_d\[10\];
+set_location_assignment -value Pin_B11 -to fsm_d\[11\];
+set_location_assignment -value Pin_B10 -to fsm_d\[12\];
+set_location_assignment -value Pin_C11 -to fsm_d\[13\];
+set_location_assignment -value Pin_C12 -to fsm_d\[14\];
+set_location_assignment -value Pin_C8 -to fsm_d\[15\];
+set_location_assignment -value Pin_B13 -to fsm_oen;
+set_location_assignment -value Pin_A13 -to fsm_wen;
+
+#-----------flash-----------
+set_location_assignment -value Pin_B8 -to flash_cen;
+
+#-----------sram-----------
+set_location_assignment -value Pin_N4 -to sram_adscn;
+set_location_assignment -value Pin_N5 -to sram_adspn;
+set_location_assignment -value Pin_L5 -to sram_advn;
+set_location_assignment -value Pin_L4 -to sram_bwan;
+set_location_assignment -value Pin_M4 -to sram_bwbn;
+set_location_assignment -value Pin_N6 -to sram_cen;
+set_location_assignment -value Pin_L7 -to sram_clk;
+
+#-----------enet-----------
+set_location_assignment -value Pin_A10 -to enet_intn;
+set_location_assignment -value Pin_C6 -to enet_mdc;
+set_location_assignment -value Pin_B6 -to enet_mdio;
+set_location_assignment -value Pin_A6 -to enet_resetn;
+set_location_assignment -value Pin_J1 -to enetr_rx_n;
+set_location_assignment -value Pin_J2 -to enetr_rx_p;
+set_location_assignment -value Pin_G1 -to enetr_tx_n;
+set_location_assignment -value Pin_G2 -to enetr_tx_p;
+
+#-----------pcie-----------
+set_location_assignment -value Pin_A8 -to pcie_perstn;
+set_location_assignment -value Pin_E6 -to pcie_refclk_n;
+set_location_assignment -value Pin_E7 -to pcie_refclk_p;
+set_location_assignment -value Pin_E1 -to pcie_rx_n;
+set_location_assignment -value Pin_E2 -to pcie_rx_p;
+set_location_assignment -value Pin_C1 -to pcie_tx_n;
+set_location_assignment -value Pin_C2 -to pcie_tx_p;
+
+#-----------Others-----------
+set_location_assignment -value Pin_N7 -to 100_diff_n;
+set_location_assignment -value Pin_M7 -to 100_diff_p;
+set_location_assignment -value Pin_J7 -to 100_refclk_n;
+set_location_assignment -value Pin_J6 -to 100_refclk_p;
+set_location_assignment -value Pin_A9 -to clk_b7_se;
+set_location_assignment -value Pin_D10 -to cpu_resetn;
+set_location_assignment -value Pin_A5 -to fpga_d0_as;
+set_location_assignment -value Pin_A7 -to lcd_csn;
+set_location_assignment -value Pin_C5 -to lcd_d_as;
+set_location_assignment -value Pin_B5 -to lcd_wen_as;
+set_location_assignment -value Pin_D13 -to user_led\[0\];
+set_location_assignment -value Pin_C13 -to user_led\[1\];
+set_location_assignment -value Pin_M6 -to user_led\[2\];
+set_location_assignment -value Pin_H13 -to user_pb\[0\];
+set_location_assignment -value Pin_G13 -to user_pb\[1\];
+
