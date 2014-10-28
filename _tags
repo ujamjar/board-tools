@@ -1,7 +1,11 @@
 <src/*.cmx> : for-pack(Board_tools)
 
+<src/utils.{ml,mli}>: syntax(camlp4o), package(mikmatch_pcre,hardcaml,lwt.syntax,deriving-ocsigen.syntax)
+
 <src/altera_{quartus,qsf}.{ml,mli}>: syntax(camlp4o), package(mikmatch_pcre,hardcaml,lwt.syntax,deriving-ocsigen.syntax)
 <src/altera_pins.{ml,mli}>: syntax(camlp4o), package(mikmatch_pcre,deriving-ocsigen.syntax,lwt.syntax)
 <src/{de0_nano,c4gx_15,c4gx_150,altera_nios2}.{ml,mli}>: syntax(camlp4o), package(hardcaml.syntax,lwt.syntax)
+
+<src/xilinx_ise.{ml,mli}>: syntax(camlp4o), package(mikmatch_pcre,hardcaml,lwt.syntax,deriving-ocsigen.syntax)
 
 <src>: include

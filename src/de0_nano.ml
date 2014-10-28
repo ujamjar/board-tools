@@ -181,7 +181,7 @@ let board_settings (top_name,qsys_name) =
 let generate_board ?(force=false) path cfg = 
     let open Altera_quartus in
     let open Altera_qsf in
-    let _ = Utils.verbose := true in
+    (*let _ = Utils.verbose := true in*) (* XXX ??? *)
 
     lwt () = Lwt_io.printf "getting board settings...\n" in
     lwt settings = board_settings cfg in

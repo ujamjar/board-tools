@@ -329,7 +329,7 @@ let add_files settings proc =
             (* copy to project (ie current) dir *)
             | `Copy -> begin
                 lwt () = Lwt_io.printf "copying %s to project dir\n" name in
-                lwt _ = Altera_quartus.Utils.shell_bool ("cp " ^ name  ^ " .") in
+                lwt _ = Utils.shell_bool ("cp " ^ name  ^ " .") in
                 Lwt.return (Filename.basename name)
             end
             (* generate (presumably in current dir) *)
